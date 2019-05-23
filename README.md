@@ -75,7 +75,10 @@ We start both services as Spring Boot Applications, we request http://localhome:
 
 !["IT"-Department with its Employees](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
+Summary 
+We have 2 independant rest-services and we can access the related data through the defined end-points.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NDQwNTQ5MCwxOTE1NTYxNjMsLTE1MD
+eyJoaXN0b3J5IjpbMTYzMDY2MjM4NiwxOTE1NTYxNjMsLTE1MD
 ExMTU0MTIsLTE4NjEyNTc3NzFdfQ==
 -->
