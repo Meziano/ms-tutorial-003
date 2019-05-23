@@ -55,7 +55,26 @@ public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
   return dept /* with its employees*/;
 }
 ...
+```
+We will use the [exchange](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html#exchange-java.lang.String-org.springframework.http.HttpMethod-org.springframework.http.HttpEntity-org.springframework.core.ParameterizedTypeReference-java.util.Map-) method of the [**RestTemplate**](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html) to communicate with the **employees-service** and get the *employees* for a given *department*:   
+```
+...
+@GetMapping("/departments/with-employees/{id}")
+public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
+  Department dept = departmentRepository.getOne(id);
+  RestTemplate restTemplate = new RestTemplate();
+  String EmployeeResourceUrl = "http://localhost:8082/{id}/employees";
+  ResponseEntity<List<Employee>> response = restTemplate.exchange(EmployeeResourceUrl, HttpMethod.GET, null,
+   new ParameterizedTypeReference<List<Employee>>() {}, id);
+  List<Employee> employees = response.getBody();	
+  dept.setEmployees(employees);
+  return dept;
+}
+```
+We start both services as Spring Boot Applications and we request http://localhome:8081/departments/with-employees/1 and we get the *"IT" department* with the list of all its *employees*.
+
+!["IT"-Department with its Employees](images/departmentWithEmployees.png?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjEyNTc3NzFdfQ==
+eyJoaXN0b3J5IjpbLTM0NjYzMDMxMiwtMTg2MTI1Nzc3MV19
 -->
