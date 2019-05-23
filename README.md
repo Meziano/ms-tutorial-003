@@ -73,9 +73,9 @@ public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
 ```
 We start both services as Spring Boot Applications and we request http://localhome:8081/departments/with-employees/1 and we get the *"IT" department* with the list of all its *employees*.
 
-!["IT"-Department with its Employees](images/[findEmployeesByDepartmentIdUsingJavaClasses.png](https://github.com/Meziano/tutorial-003/blob/master/images/findEmployeesByDepartmentIdUsingJavaClasses.png "findEmployeesByDepartmentIdUsingJavaClasses.png")?raw=true)
+!["IT"-Department with its Employees](images/[findEmployeesByDepartmentIdUsingJavaClasses.png](https://github.com/Meziano/tutorial-003/blob/master/images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMzNDgwODAyLC0xNTAxMTE1NDEyLC0xOD
-YxMjU3NzcxXX0=
+eyJoaXN0b3J5IjpbLTQ1Mjc3OTE5OCwtMTUwMTExNTQxMiwtMT
+g2MTI1Nzc3MV19
 -->
