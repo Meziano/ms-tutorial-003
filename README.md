@@ -41,7 +41,7 @@ public class Employee {
 ```
 ### The data for the database population at startup
 We still use the same *data.sql* file to populate the database at startup. 
-It must be clear that **department-service** and the **employee-service** are using 2 independant databases.
+It must be clear that **department-service** and the **employee-service** are using 2 independent databases.
 ### The DepartmentController
 We need to change the end-point introduced in [Tutorial-002](https://github.com/Meziano/tutorial-002) to retrieve a *department* with its *employees* as we want rather to work with Java classes. Here is a first pseudo-code:
 ```
@@ -50,8 +50,8 @@ We need to change the end-point introduced in [Tutorial-002](https://github.com/
 public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
   // retrieve the department
   Department dept = departmentRepository.getOne(id);
-  // send a GET to the employees-service to get the employees having departmentId= id 
-  // add the employees to  dept 
+  // GET the list of employees (as java o) having departmentId=id from employees-service  
+  // add the employees to  dept
   return dept /* with its employees*/;
 }
 ...
@@ -76,6 +76,6 @@ We start both services as Spring Boot Applications and we request http://localho
 !["IT"-Department with its Employees](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODkyOTI2OSwxOTE1NTYxNjMsLTE1MD
+eyJoaXN0b3J5IjpbMTQzMTc1OTE5NCwxOTE1NTYxNjMsLTE1MD
 ExMTU0MTIsLTE4NjEyNTc3NzFdfQ==
 -->
