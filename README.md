@@ -1,5 +1,5 @@
-# tutorial-003
-## Working with Java Classes
+# Microservices Tutorial-003
+## ## Make our rest-services comminucate using Java Classes
 Now let's assume we want to retrieve the *employees* for a given a departmentId as Java objects.
 ### The domain classes
 In this case we must add the *Employee* Java class to the domain package of **department-service** and modify both the *Department* Java Class to reflect  the fact that a *department* has a list of *employees*:
@@ -76,6 +76,6 @@ We start both services as Spring Boot Applications and we request http://localho
 !["IT"-Department with its Employees](images/[findEmployeesByDepartmentIdUsingJavaClasses.png](https://github.com/Meziano/tutorial-003/blob/master/images/findEmployeesByDepartmentIdUsingJavaClasses.png "findEmployeesByDepartmentIdUsingJavaClasses.png")?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDE1NzE4MTUsLTE4NjEyNTc3NzFdfQ
+eyJoaXN0b3J5IjpbLTE1MDExMTU0MTIsLTE4NjEyNTc3NzFdfQ
 ==
 -->
