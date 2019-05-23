@@ -50,9 +50,9 @@ We need to change the end-point introduced in [Tutorial-002](https://github.com/
 public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
   // retrieve the department
   Department dept = departmentRepository.getOne(id);
-  // GET the list of employees (as java o) having departmentId=id from employees-service  
-  // add the employees to  dept
-  return dept /* with its employees*/;
+  // GET the list of employees (as java objects) having departmentId=id from employees-service  
+  // add the list of employees to dept
+  return dept;
 }
 ...
 ```
@@ -71,11 +71,11 @@ public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
   return dept;
 }
 ```
-We start both services as Spring Boot Applications and we request http://localhome:8081/departments/with-employees/1 and we get the *"Finances" department* with the list of its *employees*:
+We start both services as Spring Boot Applications, we request http://localhome:8081/departments/with-employees/1 and we get the *"Finances" department* with the list of its *employees*:
 
 !["IT"-Department with its Employees](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTc1OTE5NCwxOTE1NTYxNjMsLTE1MD
+eyJoaXN0b3J5IjpbMTE4NDQwNTQ5MCwxOTE1NTYxNjMsLTE1MD
 ExMTU0MTIsLTE4NjEyNTc3NzFdfQ==
 -->
