@@ -43,7 +43,7 @@ public class Employee {
 We still use the same *data.sql* file to populate the database at startup. 
 It must be clear that **department-service** and the **employee-service** are using 2 independant databases.
 ### The DepartmentController
-We need to change the end-point introduced  to retrieve a *department* with its *employees* as we want rather to work with Java classes. Here is a first pseudo-code:
+We need to change the end-point introduced in [Tutorial-001](https://github.com/Meziano/tutorial-001) to retrieve a *department* with its *employees* as we want rather to work with Java classes. Here is a first pseudo-code:
 ```
 ...
 @GetMapping("/departments/with-employees/{id}")
@@ -76,6 +76,6 @@ We start both services as Spring Boot Applications and we request http://localho
 !["IT"-Department with its Employees](images/[findEmployeesByDepartmentIdUsingJavaClasses.png](https://github.com/Meziano/tutorial-003/blob/master/images/findEmployeesByDepartmentIdUsingJavaClasses.png "findEmployeesByDepartmentIdUsingJavaClasses.png")?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDExMTU0MTIsLTE4NjEyNTc3NzFdfQ
-==
+eyJoaXN0b3J5IjpbLTgyOTI3NjU0MiwtMTUwMTExNTQxMiwtMT
+g2MTI1Nzc3MV19
 -->
