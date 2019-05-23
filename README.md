@@ -76,10 +76,10 @@ We start both services as Spring Boot Applications, we request http://localhome:
 !["IT"-Department with its Employees](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
 ## Summary 
-We have 2 independant rest-services that can communicate using Java classes.
-We considered just th GET method as we focused in the communication between 2 Rest-services
+We have 2 independant Rest services that can communicate using Java classes.
+We considered just the **GET** method as we focused in the communication between 2 Rest services
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxMDM1OTYwLDE5MTU1NjE2MywtMTUwMT
-ExNTQxMiwtMTg2MTI1Nzc3MV19
+eyJoaXN0b3J5IjpbMTA5MjY5NTA2MSwxOTE1NTYxNjMsLTE1MD
+ExMTU0MTIsLTE4NjEyNTc3NzFdfQ==
 -->
