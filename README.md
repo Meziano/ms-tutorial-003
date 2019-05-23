@@ -71,11 +71,11 @@ public ObjectNode findByIdWithEmployees(@PathVariable Long id) {
   return dept;
 }
 ```
-We start both services as Spring Boot Applications and we request http://localhome:8081/departments/with-employees/1 and we get the *"IT" department* with the list of all its *employees*.
+We start both services as Spring Boot Applications and we request http://localhome:8081/departments/with-employees/1 and we get the *"Finances" department* with the list of its *employees*.
 
 !["IT"-Department with its Employees](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTc0MjEwOTAsLTE1MDExMTU0MTIsLT
+eyJoaXN0b3J5IjpbLTE1NDEzNjAxNzcsLTE1MDExMTU0MTIsLT
 E4NjEyNTc3NzFdfQ==
 -->
