@@ -1,5 +1,5 @@
 # Microservices Tutorial-003
-## ## Make our rest-services comminucate using Java Classes
+## Make our rest-services comminucate using Java Classes
 Now let's assume we want to retrieve the *employees* for a given a *departmentId* as Java objects.
 ### The domain classes
 In this case we must add the *Employee* Java class to the domain package of **department-service** and modify both the *Employee* and the *Department* Java classes to reflect  the fact that a *department* has a list of *employees*:
@@ -75,10 +75,11 @@ We start both services as Spring Boot Applications, we request http://localhome:
 
 !["IT"-Department with its Employees](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
-Summary 
-We have 2 independant rest-services and we can access the related data through the defined end-points.
+## Summary 
+We have 2 independant rest-services that can communicate using Java classes.
+We didn't 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDY2MjM4NiwxOTE1NTYxNjMsLTE1MD
+eyJoaXN0b3J5IjpbLTM3NDU2NTM1NSwxOTE1NTYxNjMsLTE1MD
 ExMTU0MTIsLTE4NjEyNTc3NzFdfQ==
 -->
