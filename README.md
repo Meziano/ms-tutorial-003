@@ -1,5 +1,5 @@
 # Microservices Tutorial-003
-## Make our rest-services comminucate using Java Classes
+# Make our rest-services comminucate using Java Classes
 Now let's assume we want to retrieve the *employees* for a given a *departmentId* as Java objects.
 ### The domain classes
 In this case we must add the *Employee* Java class to the domain package of **department-service** and modify both the *Employee* and the *Department* Java classes to reflect  the fact that a *department* has a list of *employees*:
@@ -80,6 +80,7 @@ We have 2 independant Rest services that can communicate using Java classes.
 We considered just the **GET** method as we focused in the communication between 2 Rest services
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTY1NjYyMiwxMDkyNjk1MDYxLDE5MT
-U1NjE2MywtMTUwMTExNTQxMiwtMTg2MTI1Nzc3MV19
+eyJoaXN0b3J5IjpbLTE2MTI4OTA5NjMsLTIwNTY1NjYyMiwxMD
+kyNjk1MDYxLDE5MTU1NjE2MywtMTUwMTExNTQxMiwtMTg2MTI1
+Nzc3MV19
 -->
