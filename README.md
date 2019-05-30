@@ -43,7 +43,7 @@ public class Employee {
 We still use the same *data.sql* file to populate the database at startup. 
 It must be clear that **department-service** and the **employee-service** are using 2 independent databases.
 ### The DepartmentController
-We need to change the end-point introduced in [Tutorial-002](https://github.com/Meziano/tutorial-002) to retrieve a *department* with its *employees* as we want rather to work with Java classes. Here is a first pseudo-code:
+We need to change the end-point introduced in [Tutorial-002](https://github.com/Meziano/ms-tutorial-002) to retrieve a *department* with its *employees* as we want rather to work with Java classes. Here is a first pseudo-code:
 ```
 ...
 @GetMapping("/departments/with-employees/{id}")
@@ -80,6 +80,6 @@ We have 2 independant Rest services that can communicate using Java classes.
 We considered just the **GET** method as we focused in the communication between 2 Rest services
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjY5NTA2MSwxOTE1NTYxNjMsLTE1MD
-ExMTU0MTIsLTE4NjEyNTc3NzFdfQ==
+eyJoaXN0b3J5IjpbLTIwNTY1NjYyMiwxMDkyNjk1MDYxLDE5MT
+U1NjE2MywtMTUwMTExNTQxMiwtMTg2MTI1Nzc3MV19
 -->
