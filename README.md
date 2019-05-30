@@ -1,7 +1,7 @@
 # Microservices Tutorial-003
 # Make our rest-services comminucate using Java Classes
 Now let's assume we want to retrieve the *employees* for a given a *departmentId* as Java objects.
-### The domain classes
+## The domain classes
 In this case we must add the *Employee* Java class to the domain package of **department-service** and modify both the *Employee* and the *Department* Java classes to reflect  the fact that a *department* has a list of *employees*:
 ```
 package de.meziane.ms.domain;
@@ -39,10 +39,10 @@ public class Employee {
   ...
 }
 ```
-### The data for the database population at startup
+## The data for the database population at startup
 We still use the same *data.sql* file to populate the database at startup. 
 It must be clear that **department-service** and the **employee-service** are using 2 independent databases.
-### The DepartmentController
+## The DepartmentController
 We need to change the end-point introduced in [Tutorial-002](https://github.com/Meziano/ms-tutorial-002) to retrieve a *department* with its *employees* as we want rather to work with Java classes. Here is a first pseudo-code:
 ```
 ...
@@ -80,7 +80,7 @@ We have 2 independant Rest services that can communicate using Java classes.
 We considered just the **GET** method as we focused in the communication between 2 Rest services
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI4OTA5NjMsLTIwNTY1NjYyMiwxMD
-kyNjk1MDYxLDE5MTU1NjE2MywtMTUwMTExNTQxMiwtMTg2MTI1
-Nzc3MV19
+eyJoaXN0b3J5IjpbLTg1NTIyNTY3MiwtMjA1NjU2NjIyLDEwOT
+I2OTUwNjEsMTkxNTU2MTYzLC0xNTAxMTE1NDEyLC0xODYxMjU3
+NzcxXX0=
 -->
